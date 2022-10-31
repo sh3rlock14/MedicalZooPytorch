@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-10-28T09:33:32.607933",
+    "startedAt": "2022-10-28T09:33:26.464936",
+    "docker": null,
+    "gpu": "GeForce GTX 1050",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "d:\\LaureaMagistrale\\MedicalZooPytorch\\plTrainBrats18.py",
+    "codePath": "plTrainBrats18.py",
+    "git": {
+        "remote": "https://github.com/black0017/MedicalZooPytorch.git",
+        "commit": "8f40dab689841d7ff0e36aa5e583a1a1509fac3d"
+    },
+    "email": "mattiacappa@hotmail.it",
+    "root": "D:/LaureaMagistrale/MedicalZooPytorch",
+    "host": "LAPTOP-9TJ2U8N5",
+    "username": "User",
+    "executable": "D:\\IDEs\\anaconda3\\envs\\AML\\python.exe"
+}

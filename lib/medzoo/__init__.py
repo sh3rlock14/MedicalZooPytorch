@@ -1,5 +1,6 @@
 import torch.optim as optim
 
+"""
 from .COVIDNet import CovidNet, CNN
 from .DenseVoxelNet import DenseVoxelNet
 from .Densenet3D import DualPathDenseNet, DualSingleDenseNet, SinglePathDenseNet
@@ -11,8 +12,11 @@ from .SkipDenseNet3D import SkipDenseNet3D
 from .Unet2D import Unet
 from .Unet3D import UNet3D
 from .Vnet import VNet, VNetLight
+"""
 
-model_list = ['UNET3D', 'DENSENET1', "UNET2D", 'DENSENET2', 'DENSENET3', 'HYPERDENSENET', "SKIPDENSENET3D",
+from .Unet3Dpl import UNet3Dpl
+
+model_list = ['UNET3D', 'UNET3Dpl' ,'DENSENET1', "UNET2D", 'DENSENET2', 'DENSENET3', 'HYPERDENSENET', "SKIPDENSENET3D",
               "DENSEVOXELNET", 'VNET', 'VNET2', "RESNET3DVAE", "RESNETMED3D", "COVIDNET1", "COVIDNET2", "CNN",
               "HIGHRESNET"]
 
@@ -27,12 +31,14 @@ def create_model(args):
     weight_decay = 0.0000000001
     print("Building Model . . . . . . . ." + model_name)
 
+    """
     if model_name == 'VNET2':
         model = VNetLight(in_channels=in_channels, elu=False, classes=num_classes)
     elif model_name == 'VNET':
         model = VNet(in_channels=in_channels, elu=False, classes=num_classes)
     elif model_name == 'UNET3D':
         model = UNet3D(in_channels=in_channels, n_classes=num_classes, base_n_filter=8)
+    
     elif model_name == 'DENSENET1':
         model = SinglePathDenseNet(in_channels=in_channels, classes=num_classes)
     elif model_name == 'DENSENET2':
@@ -67,8 +73,13 @@ def create_model(args):
         model = generate_resnet3d(in_channels=in_channels, classes=num_classes, model_depth=depth)
 
     print(model_name, 'Number of params: {}'.format(
-        sum([p.data.nelement() for p in model.parameters()])))
-
+        sum([p.data.nelement() for p in model.parameters()])))    
+    """
+    
+    if model_name == 'UNET3Dpl':
+        model = UNet3Dpl(in_channels=in_channels, n_classes=num_classes, base_n_filter=8)
+    
+    """
     if optimizer_name == 'sgd':
         optimizer = optim.SGD(model.parameters(), lr=lr, momentum=0.5, weight_decay=weight_decay)
     elif optimizer_name == 'adam':
@@ -76,4 +87,6 @@ def create_model(args):
     elif optimizer_name == 'rmsprop':
         optimizer = optim.RMSprop(model.parameters(), lr=lr, weight_decay=weight_decay)
 
-    return model, optimizer
+    """
+    
+    return model#, optimizer

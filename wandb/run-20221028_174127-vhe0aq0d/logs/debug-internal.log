@@ -1,0 +1,64 @@
+2022-10-28 17:41:31,826 INFO    MainThread:3652 [internal.py:wandb_internal():90] W&B internal server running at pid: 3652, started at: 2022-10-28 17:41:31.825542
+2022-10-28 17:41:31,833 INFO    WriterThread:3652 [datastore.py:open_for_write():75] open: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_174127-vhe0aq0d\run-vhe0aq0d.wandb
+2022-10-28 17:41:31,865 DEBUG   SenderThread:3652 [sender.py:send():236] send: header
+2022-10-28 17:41:31,865 DEBUG   SenderThread:3652 [sender.py:send():236] send: run
+2022-10-28 17:41:32,433 INFO    SenderThread:3652 [dir_watcher.py:__init__():216] watching files in: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_174127-vhe0aq0d\files
+2022-10-28 17:41:32,433 INFO    SenderThread:3652 [sender.py:_start_run_threads():815] run started: vhe0aq0d with start time 1666971689
+2022-10-28 17:41:32,435 DEBUG   SenderThread:3652 [sender.py:send():236] send: summary
+2022-10-28 17:41:32,437 INFO    SenderThread:3652 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-10-28 17:41:32,446 DEBUG   HandlerThread:3652 [handler.py:handle_request():140] handle_request: check_version
+2022-10-28 17:41:32,446 DEBUG   SenderThread:3652 [sender.py:send_request():250] send_request: check_version
+2022-10-28 17:41:32,791 DEBUG   HandlerThread:3652 [handler.py:handle_request():140] handle_request: run_start
+2022-10-28 17:41:33,456 INFO    Thread-17 :3652 [dir_watcher.py:_on_file_created():269] file/dir created: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_174127-vhe0aq0d\files\wandb-summary.json
+2022-10-28 17:41:33,551 DEBUG   HandlerThread:3652 [meta.py:__init__():35] meta init
+2022-10-28 17:41:33,552 DEBUG   HandlerThread:3652 [meta.py:__init__():49] meta init done
+2022-10-28 17:41:33,552 DEBUG   HandlerThread:3652 [meta.py:probe():209] probe
+2022-10-28 17:41:33,607 DEBUG   HandlerThread:3652 [meta.py:_setup_git():199] setup git
+2022-10-28 17:41:33,748 DEBUG   HandlerThread:3652 [meta.py:_setup_git():206] setup git done
+2022-10-28 17:41:33,748 DEBUG   HandlerThread:3652 [meta.py:_save_pip():53] save pip
+2022-10-28 17:41:33,752 DEBUG   HandlerThread:3652 [meta.py:_save_pip():67] save pip done
+2022-10-28 17:41:33,753 DEBUG   HandlerThread:3652 [meta.py:_save_conda():74] save conda
+2022-10-28 17:41:33,761 ERROR   HandlerThread:3652 [meta.py:_save_conda():83] Error saving conda packages
+Traceback (most recent call last):
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\wandb\sdk\internal\meta.py", line 79, in _save_conda
+    subprocess.call(
+  File "D:\IDEs\anaconda3\envs\AML\lib\subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "D:\IDEs\anaconda3\envs\AML\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "D:\IDEs\anaconda3\envs\AML\lib\subprocess.py", line 1311, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+  File "c:\Users\User\.vscode\extensions\ms-python.python-2022.16.1\pythonFiles\lib\python\debugpy\_vendored\pydevd\_pydev_bundle\pydev_monkey.py", line 853, in new_CreateProcess
+    return getattr(_subprocess, original_name)(app_name, cmd_line, *args)
+FileNotFoundError: [WinError 2] Impossibile trovare il file specificato
+2022-10-28 17:41:33,764 DEBUG   HandlerThread:3652 [meta.py:_save_conda():84] save conda done
+2022-10-28 17:41:33,764 DEBUG   HandlerThread:3652 [meta.py:probe():247] probe done
+2022-10-28 17:41:34,299 DEBUG   SenderThread:3652 [sender.py:send():236] send: files
+2022-10-28 17:41:34,300 DEBUG   HandlerThread:3652 [handler.py:handle_request():140] handle_request: stop_status
+2022-10-28 17:41:34,301 INFO    SenderThread:3652 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2022-10-28 17:41:34,307 DEBUG   SenderThread:3652 [sender.py:send_request():250] send_request: stop_status
+2022-10-28 17:41:34,463 INFO    Thread-17 :3652 [dir_watcher.py:_on_file_created():269] file/dir created: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_174127-vhe0aq0d\files\wandb-metadata.json
+2022-10-28 17:41:34,464 INFO    Thread-17 :3652 [dir_watcher.py:_on_file_created():269] file/dir created: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_174127-vhe0aq0d\files\conda-environment.yaml
+2022-10-28 17:41:34,465 INFO    Thread-17 :3652 [dir_watcher.py:_on_file_created():269] file/dir created: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_174127-vhe0aq0d\files\output.log
+2022-10-28 17:41:34,465 INFO    Thread-17 :3652 [dir_watcher.py:_on_file_created():269] file/dir created: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_174127-vhe0aq0d\files\requirements.txt
+2022-10-28 17:41:34,702 DEBUG   SenderThread:3652 [sender.py:send():236] send: telemetry
+2022-10-28 17:41:35,304 INFO    Thread-23 :3652 [upload_job.py:push():138] Uploaded file C:\Users\User\AppData\Local\Temp\tmp6ahydgm1wandb\2j3t4cve-wandb-metadata.json
+2022-10-28 17:41:36,490 INFO    Thread-17 :3652 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_174127-vhe0aq0d\files\output.log
+2022-10-28 17:41:49,710 DEBUG   HandlerThread:3652 [handler.py:handle_request():140] handle_request: stop_status
+2022-10-28 17:41:49,711 DEBUG   SenderThread:3652 [sender.py:send_request():250] send_request: stop_status
+2022-10-28 17:42:02,785 INFO    Thread-17 :3652 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_174127-vhe0aq0d\files\config.yaml
+2022-10-28 17:42:05,081 DEBUG   HandlerThread:3652 [handler.py:handle_request():140] handle_request: stop_status
+2022-10-28 17:42:05,081 DEBUG   SenderThread:3652 [sender.py:send_request():250] send_request: stop_status
+2022-10-28 17:42:08,887 DEBUG   SenderThread:3652 [sender.py:send():236] send: stats
+2022-10-28 17:42:20,443 DEBUG   HandlerThread:3652 [handler.py:handle_request():140] handle_request: stop_status
+2022-10-28 17:42:20,444 DEBUG   SenderThread:3652 [sender.py:send_request():250] send_request: stop_status
+2022-10-28 17:42:35,832 DEBUG   HandlerThread:3652 [handler.py:handle_request():140] handle_request: stop_status
+2022-10-28 17:42:35,833 DEBUG   SenderThread:3652 [sender.py:send_request():250] send_request: stop_status
+2022-10-28 17:42:46,549 DEBUG   SenderThread:3652 [sender.py:send():236] send: stats
+2022-10-28 17:42:47,330 INFO    Thread-17 :3652 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_174127-vhe0aq0d\files\output.log
+2022-10-28 17:42:51,160 DEBUG   HandlerThread:3652 [handler.py:handle_request():140] handle_request: stop_status
+2022-10-28 17:42:51,160 DEBUG   SenderThread:3652 [sender.py:send_request():250] send_request: stop_status
+2022-10-28 17:43:24,077 DEBUG   SenderThread:3652 [sender.py:send():236] send: stats
+2022-10-28 17:43:27,385 DEBUG   HandlerThread:3652 [handler.py:handle_request():140] handle_request: stop_status
+2022-10-28 17:43:27,386 DEBUG   SenderThread:3652 [sender.py:send_request():250] send_request: stop_status
+2022-10-28 17:43:27,737 INFO    Thread-17 :3652 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_174127-vhe0aq0d\files\output.log

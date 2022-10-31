@@ -1,0 +1,27 @@
+2022-10-28 12:09:18,996 INFO    MainThread:10276 [wandb_setup.py:_flush():76] Configure stats pid to 10276
+2022-10-28 12:09:18,998 INFO    MainThread:10276 [wandb_setup.py:_flush():76] Loading settings from C:\Users\User\.config\wandb\settings
+2022-10-28 12:09:18,999 INFO    MainThread:10276 [wandb_setup.py:_flush():76] Loading settings from wandb\settings
+2022-10-28 12:09:19,000 INFO    MainThread:10276 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'MICCAI 2018 Medical Image Segmentation', 'entity': 'mattiacapparella', 'sweep_id': 'bzl9ntsw', 'root_dir': 'D:\\LaureaMagistrale\\MedicalZooPytorch', 'run_id': '14fnutsw', 'sweep_param_path': 'D:\\LaureaMagistrale\\MedicalZooPytorch\\wandb\\sweep-bzl9ntsw\\config-14fnutsw.yaml'}
+2022-10-28 12:09:19,001 INFO    MainThread:10276 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'plTrainBrats18.py', 'program': 'plTrainBrats18.py'}
+2022-10-28 12:09:19,003 INFO    MainThread:10276 [wandb_init.py:_log_setup():461] Logging user logs to D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_120918-14fnutsw\logs\debug.log
+2022-10-28 12:09:19,005 INFO    MainThread:10276 [wandb_init.py:_log_setup():462] Logging internal logs to D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_120918-14fnutsw\logs\debug-internal.log
+2022-10-28 12:09:19,005 INFO    MainThread:10276 [wandb_init.py:init():495] calling init triggers
+2022-10-28 12:09:19,006 INFO    MainThread:10276 [wandb_init.py:init():498] wandb.init called with sweep_config: {'data_params': {'augmentation': False, 'classes': 4, 'data_path': 'D:/LaureaMagistrale/Tesi Magistrale/MICCAI Data/MICCAI_BraTS_2018_Data_Training', 'dataset': 'brats2018', 'loadData': True, 'normalization': 'full_volume_mean', 'split': 0.8, 'threshold': 1e-11, 'vol__train_samples': 1024, 'vol_crop_dim': '(64, 64, 64)', 'vol_val_samples': 128}, 'exp_params': {'lr': 2.963812103433021e-05}, 'sweep_params': {'ntrials': 1, 'project': 'MICCAI 2018 Medical Image Segmentation'}, 'trainer_params': {'accelerator': 'gpu', 'devices': 1, 'limit_val_batches': 0, 'max_steps': 100, 'max_time': '00:00:10:00', 'num_sanity_val_steps': 0}}
+config: {}
+2022-10-28 12:09:19,007 INFO    MainThread:10276 [wandb_init.py:init():548] starting backend
+2022-10-28 12:09:19,007 INFO    MainThread:10276 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn, using: spawn
+2022-10-28 12:09:19,056 INFO    MainThread:10276 [backend.py:ensure_launched():217] starting backend process...
+2022-10-28 12:09:20,205 INFO    MainThread:10276 [backend.py:ensure_launched():222] started backend process with pid: 21960
+2022-10-28 12:09:20,208 INFO    MainThread:10276 [wandb_init.py:init():558] backend started and connected
+2022-10-28 12:09:20,227 INFO    MainThread:10276 [wandb_run.py:_config_callback():1131] config_cb None None {'data_params': {'augmentation': False, 'classes': 4, 'data_path': 'D:/LaureaMagistrale/Tesi Magistrale/MICCAI Data/MICCAI_BraTS_2018_Data_Training', 'dataset': 'brats2018', 'loadData': True, 'normalization': 'full_volume_mean', 'split': 0.8, 'threshold': 1e-11, 'vol__train_samples': 1024, 'vol_crop_dim': '(64, 64, 64)', 'vol_val_samples': 128}, 'exp_params': {'lr': 2.963812103433021e-05}, 'sweep_params': {'ntrials': 1, 'project': 'MICCAI 2018 Medical Image Segmentation'}, 'trainer_params': {'accelerator': 'gpu', 'devices': 1, 'limit_val_batches': 0, 'max_steps': 100, 'max_time': '00:00:10:00', 'num_sanity_val_steps': 0}}
+2022-10-28 12:09:20,228 INFO    MainThread:10276 [wandb_init.py:init():634] updated telemetry
+2022-10-28 12:09:20,305 INFO    MainThread:10276 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-10-28 12:09:23,328 INFO    MainThread:10276 [wandb_run.py:_on_init():1919] communicating current version
+2022-10-28 12:09:23,690 INFO    MainThread:10276 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.13.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-10-28 12:09:23,690 INFO    MainThread:10276 [wandb_init.py:init():700] starting run threads in backend
+2022-10-28 12:09:25,165 INFO    MainThread:10276 [wandb_run.py:_console_start():1893] atexit reg
+2022-10-28 12:09:25,272 INFO    MainThread:10276 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.WRAP
+2022-10-28 12:09:25,273 INFO    MainThread:10276 [wandb_run.py:_redirect():1803] Wrapping output streams.
+2022-10-28 12:09:25,286 INFO    MainThread:10276 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-10-28 12:09:25,288 INFO    MainThread:10276 [wandb_init.py:init():732] run started, returning control to user process

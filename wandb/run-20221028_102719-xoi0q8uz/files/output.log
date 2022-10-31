@@ -1,0 +1,4 @@
+
+Starting a run with:
+{'data_params': {'data_path': 'D:/LaureaMagistrale/Tesi Magistrale/MICCAI Data/MICCAI_BraTS_2018_Data_Training', 'dataset': 'brats2018'}, 'exp_params': {'lr': 0.0009466461073035418}, 'sweep_params': {'ntrials': 1, 'project': 'MICCAI 2018 Medical Image Segmentation'}, 'trainer_params': {'accelerator': 'gpu', 'devices': 1, 'limit_val_batches': 0, 'max_steps': 100, 'max_time': '00:00:10:00', 'num_sanity_val_steps': 0}}
+Hello World!

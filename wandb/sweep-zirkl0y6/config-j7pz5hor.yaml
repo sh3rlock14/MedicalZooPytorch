@@ -1,0 +1,21 @@
+wandb_version: 1
+
+data_params:
+  value:
+    data_path: D:/LaureaMagistrale/Tesi Magistrale/MICCAI Data/MICCAI_BraTS_2018_Data_Training
+    dataset: brats2018
+exp_params:
+  value:
+    lr: 0.08503704635642793
+sweep_params:
+  value:
+    ntrials: 1
+    project: MICCAI 2018 Medical Image Segmentation
+trainer_params:
+  value:
+    accelerator: gpu
+    devices: 1
+    limit_val_batches: 0
+    max_steps: 100
+    max_time: 00:00:10:00
+    num_sanity_val_steps: 0

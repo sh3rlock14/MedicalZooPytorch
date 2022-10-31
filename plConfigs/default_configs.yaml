@@ -1,0 +1,81 @@
+program: plTrainBrats18.py
+method: random
+metric:
+  name: train_loss
+  goal: minimize
+parameters:
+  sweep_params:
+    parameters:
+      ntrials:
+        value: 1
+      project:
+        value: 'MICCAI 2018 Medical Image Segmentation'
+
+  data_params:
+    parameters:
+      dataset:
+        value: 'brats2018'
+      data_path:
+        value: "D:/LaureaMagistrale/Tesi Magistrale/MICCAI Data/"
+      classes:
+        value: 4
+      train_batch_size:
+        value: 4
+      num_workers:
+        value: 0
+      vol_crop_dim:
+        value: [64, 64, 64]
+      threshold:
+        value: 1.e-11
+      vol_train_samples:
+        value: 32
+      vol_val_samples:
+        value: 4
+      load:
+        value: False
+      split:
+        value: 0.8
+      augmentation:
+        value: False
+      normalization:
+        value: 'full_volume_mean'
+
+  model_params:
+    parameters:
+      in_channels:
+        value: 4
+      n_classes:
+        value: 4
+      base_n_filter:
+        value: 8
+  
+  
+  exp_params:
+    parameters:
+      lr:
+        distribution: log_uniform_values
+        min: 2.e-5
+        max: 1.e-1
+  
+  trainer_params:
+    parameters:
+      accelerator:
+        value: 'gpu'
+      devices:
+        value: 1
+      max_steps:
+        value: 100
+      max_time:
+        value: '00:00:10:00'
+      num_sanity_val_steps:
+        value: 0
+      limit_val_batches:
+        value: 0
+  
+  wandb_params:
+    parameters:
+      save_dir:
+        value: "D:/LaureaMagistrale/MedicalZooPytorch/results/logs"
+      manual_seed:
+        value: 42
+

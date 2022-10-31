@@ -1,0 +1,29 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.8.12",
+    "heartbeatAt": "2022-10-28T08:35:24.379906",
+    "startedAt": "2022-10-28T08:35:18.123689",
+    "docker": null,
+    "gpu": "GeForce GTX 1050",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--data_params={'data_path': 'D:/LaureaMagistrale/Tesi Magistrale/MICCAI Data/MICCAI_BraTS_2018_Data_Training', 'dataset': 'brats2018'}",
+        "--exp_params={'lr': 4.768184242972512e-05}",
+        "--sweep_params={'ntrials': 1, 'project': 'MICCAI 2018 Medical Image Segmentation'}",
+        "--trainer_params={'accelerator': 'gpu', 'devices': 1, 'limit_val_batches': 0, 'max_steps': 100, 'max_time': '00:00:10:00', 'num_sanity_val_steps': 0}"
+    ],
+    "state": "running",
+    "program": "pl_examples/plTrainBrats18.py",
+    "codePath": "pl_examples\\plTrainBrats18.py",
+    "git": {
+        "remote": "https://github.com/black0017/MedicalZooPytorch.git",
+        "commit": "8f40dab689841d7ff0e36aa5e583a1a1509fac3d"
+    },
+    "email": "mattiacappa@hotmail.it",
+    "root": "D:/LaureaMagistrale/MedicalZooPytorch",
+    "host": "LAPTOP-9TJ2U8N5",
+    "username": "User",
+    "executable": "D:\\IDEs\\anaconda3\\envs\\AML\\python.exe"
+}

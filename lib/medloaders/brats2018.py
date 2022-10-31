@@ -1,5 +1,7 @@
 import glob
 import os
+from typing import List, Optional, Sequence, Union, Any, Callable
+from types import SimpleNamespace
 
 import numpy as np
 import torch
@@ -10,6 +12,72 @@ import lib.utils as utils
 from lib.medloaders import medical_image_process as img_loader
 from lib.medloaders.medical_loader_utils import create_sub_volumes
 
+
+
+from pytorch_lightning import LightningDataModule
+from torch.utils.data import DataLoader
+
+class DatasetModule(LightningDataModule):
+
+    def __init__(
+        self,
+        data_path: str,
+        dataset: str,
+        classes: int = 5,
+        vol_crop_dim: Sequence[int] = (32, 32, 32),
+        train_batch_size: int = 4,
+        num_workers: int = 0,
+        load: bool = False,
+        split: float = 0.8,
+        **kwargs,
+    ):
+        super().__init__()
+
+        self.data_path = data_path
+        self.dataset = dataset
+        self.classes = classes
+        self.vol_crop_dim = tuple(vol_crop_dim)
+        self.train_batch_size = train_batch_size
+        self.num_workers = num_workers
+        self.load = load
+        self.split = split        
+        self.args = SimpleNamespace(**kwargs)
+    
+    def setup(self, stage: Optional[str] = None) -> None:
+
+        #TODO: Add data transformation pipeline
+
+
+        ### DATASETS ###
+
+        if self.dataset.lower() == "brats2018":
+
+            total_data = 244
+            split_idx = int(total_data * self.split)
+
+            if stage == "fit" or stage == None:
+                self.train_dataset = MICCAIBraTS2018(self.args, mode = 'train',
+                                                    dataset_path = self.data_path,
+                                                    classes = self.classes, crop_dim = self.vol_crop_dim,
+                                                    split_idx = split_idx, load = self.load, samples=self.args.vol_train_samples)
+                
+                
+                self.val_dataset = MICCAIBraTS2018(self.args, mode = 'val',
+                                                    dataset_path = self.data_path,
+                                                    classes = self.classes, crop_dim = self.vol_crop_dim,
+                                                    split_idx = split_idx, load = self.load, samples=self.args.vol_val_samples)
+                
+
+
+                #self.val_dataset = Faust2500(self.data_path, train=False, transform=train_transform)
+        
+    ### DATALOADERS ###
+
+    def train_dataloader(self) -> torch.utils.data.DataLoader:
+        return DataLoader(self.train_dataset, batch_size=self.train_batch_size, num_workers=self.num_workers, shuffle=True)
+    
+    def val_dataloader(self) -> torch.utils.data.DataLoader:
+        return DataLoader(self.val_dataset, batch_size=self.train_batch_size, num_workers=self.num_workers, shuffle=False)
 
 class MICCAIBraTS2018(Dataset):
     """
@@ -30,7 +98,7 @@ class MICCAIBraTS2018(Dataset):
         self.root = str(dataset_path)
         self.training_path = self.root + '/MICCAI_BraTS_2018_Data_Training/'
         self.testing_path = self.root + ' '
-        self.CLASSES = 4
+        self.CLASSES = classes
         self.full_vol_dim = (240, 240, 155)  # slice, width, height
         self.crop_size = crop_dim
         self.threshold = args.threshold

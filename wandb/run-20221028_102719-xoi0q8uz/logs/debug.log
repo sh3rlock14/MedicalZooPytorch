@@ -1,0 +1,189 @@
+2022-10-28 10:27:19,060 INFO    MainThread:18496 [wandb_setup.py:_flush():76] Configure stats pid to 18496
+2022-10-28 10:27:19,064 INFO    MainThread:18496 [wandb_setup.py:_flush():76] Loading settings from C:\Users\User\.config\wandb\settings
+2022-10-28 10:27:19,065 INFO    MainThread:18496 [wandb_setup.py:_flush():76] Loading settings from wandb\settings
+2022-10-28 10:27:19,066 INFO    MainThread:18496 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'project': 'MICCAI 2018 Medical Image Segmentation', 'entity': 'mattiacapparella', 'sweep_id': 'o193yhjg', 'root_dir': 'D:\\LaureaMagistrale\\MedicalZooPytorch', 'run_id': 'xoi0q8uz', 'sweep_param_path': 'D:\\LaureaMagistrale\\MedicalZooPytorch\\wandb\\sweep-o193yhjg\\config-xoi0q8uz.yaml'}
+2022-10-28 10:27:19,067 INFO    MainThread:18496 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'pl_examples\\plTrainBrats18.py', 'program': 'pl_examples/plTrainBrats18.py'}
+2022-10-28 10:27:19,069 INFO    MainThread:18496 [wandb_init.py:_log_setup():461] Logging user logs to D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_102719-xoi0q8uz\logs\debug.log
+2022-10-28 10:27:19,071 INFO    MainThread:18496 [wandb_init.py:_log_setup():462] Logging internal logs to D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221028_102719-xoi0q8uz\logs\debug-internal.log
+2022-10-28 10:27:19,072 INFO    MainThread:18496 [wandb_init.py:init():495] calling init triggers
+2022-10-28 10:27:19,073 INFO    MainThread:18496 [wandb_init.py:init():498] wandb.init called with sweep_config: {'data_params': {'data_path': 'D:/LaureaMagistrale/Tesi Magistrale/MICCAI Data/MICCAI_BraTS_2018_Data_Training', 'dataset': 'brats2018'}, 'exp_params': {'lr': 0.0009466461073035418}, 'sweep_params': {'ntrials': 1, 'project': 'MICCAI 2018 Medical Image Segmentation'}, 'trainer_params': {'accelerator': 'gpu', 'devices': 1, 'limit_val_batches': 0, 'max_steps': 100, 'max_time': '00:00:10:00', 'num_sanity_val_steps': 0}}
+config: {}
+2022-10-28 10:27:19,074 INFO    MainThread:18496 [wandb_init.py:init():548] starting backend
+2022-10-28 10:27:19,075 INFO    MainThread:18496 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn, using: spawn
+2022-10-28 10:27:19,165 INFO    MainThread:18496 [backend.py:ensure_launched():217] starting backend process...
+2022-10-28 10:27:20,745 INFO    MainThread:18496 [backend.py:ensure_launched():222] started backend process with pid: 22532
+2022-10-28 10:27:20,751 INFO    MainThread:18496 [wandb_init.py:init():558] backend started and connected
+2022-10-28 10:27:20,825 INFO    MainThread:18496 [wandb_run.py:_config_callback():1131] config_cb None None {'data_params': {'data_path': 'D:/LaureaMagistrale/Tesi Magistrale/MICCAI Data/MICCAI_BraTS_2018_Data_Training', 'dataset': 'brats2018'}, 'exp_params': {'lr': 0.0009466461073035418}, 'sweep_params': {'ntrials': 1, 'project': 'MICCAI 2018 Medical Image Segmentation'}, 'trainer_params': {'accelerator': 'gpu', 'devices': 1, 'limit_val_batches': 0, 'max_steps': 100, 'max_time': '00:00:10:00', 'num_sanity_val_steps': 0}}
+2022-10-28 10:27:20,828 INFO    MainThread:18496 [wandb_init.py:init():634] updated telemetry
+2022-10-28 10:27:21,099 INFO    MainThread:18496 [wandb_init.py:init():665] communicating run to backend with 30 second timeout
+2022-10-28 10:27:24,309 INFO    MainThread:18496 [wandb_run.py:_on_init():1919] communicating current version
+2022-10-28 10:27:24,788 INFO    MainThread:18496 [wandb_run.py:_on_init():1923] got version response upgrade_message: "wandb version 0.13.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2022-10-28 10:27:24,788 INFO    MainThread:18496 [wandb_init.py:init():700] starting run threads in backend
+2022-10-28 10:27:28,501 INFO    MainThread:18496 [wandb_run.py:_console_start():1893] atexit reg
+2022-10-28 10:27:28,505 INFO    MainThread:18496 [wandb_run.py:_redirect():1766] redirect: SettingsConsole.WRAP
+2022-10-28 10:27:28,505 INFO    MainThread:18496 [wandb_run.py:_redirect():1803] Wrapping output streams.
+2022-10-28 10:27:28,520 INFO    MainThread:18496 [wandb_run.py:_redirect():1827] Redirects installed.
+2022-10-28 10:27:28,521 INFO    MainThread:18496 [wandb_init.py:init():732] run started, returning control to user process
+2022-10-28 10:28:09,672 INFO    MainThread:18496 [wandb_run.py:_atexit_cleanup():1862] got exitcode: 0
+2022-10-28 10:28:09,676 INFO    MainThread:18496 [wandb_run.py:_restore():1834] restore
+2022-10-28 10:28:10,477 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1261
+  total_bytes: 1261
+}
+
+2022-10-28 10:28:10,840 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1261
+  total_bytes: 1261
+}
+
+2022-10-28 10:28:11,340 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 1261
+  total_bytes: 1261
+}
+
+2022-10-28 10:28:12,038 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 1261
+  total_bytes: 6226
+}
+
+2022-10-28 10:28:12,145 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 1261
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:12,254 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 1261
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:12,364 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 1261
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:12,479 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 1261
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:12,610 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 1261
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:12,725 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 1261
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:12,835 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 1261
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:12,940 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 6253
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:13,050 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 6253
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:13,159 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 6253
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:13,269 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 6253
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:13,377 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 6253
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:13,489 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 6253
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:13,818 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 6253
+  total_bytes: 6253
+}
+
+2022-10-28 10:28:14,870 INFO    MainThread:18496 [wandb_run.py:_on_finish():1991] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 6253
+  total_bytes: 6253
+}
+local_info {
+}
+
+2022-10-28 10:28:17,137 INFO    MainThread:18496 [wandb_run.py:_footer_history_summary_info():3099] rendering history
+2022-10-28 10:28:17,137 INFO    MainThread:18496 [wandb_run.py:_footer_history_summary_info():3131] rendering summary
+2022-10-28 10:28:17,147 INFO    MainThread:18496 [wandb_run.py:_footer_sync_info():3055] logging synced files
