@@ -24,7 +24,7 @@ parameters:
       num_workers:
         value: 0
       vol_crop_dim:
-        value: [64, 64, 64]
+        value: [32, 32, 32]
       threshold:
         value: 1.e-11
       vol_train_samples:
@@ -52,10 +52,27 @@ parameters:
   
   exp_params:
     parameters:
+      num_iters:
+        value: 100
       lr:
         distribution: log_uniform_values
         min: 2.e-5
         max: 1.e-1
+      momentum:
+        distribution: uniform
+        min: 0.7
+        max: 0.9
+      weight_decay:
+        distribution: log_uniform_values
+        min: 0.01
+        max: 0.1
+      alpha:
+        value: 0.99
+      inModalities:
+        value: 4
+      inChannels:
+        value: 4
+      
   
   trainer_params:
     parameters:
@@ -71,6 +88,11 @@ parameters:
         value: 0
       limit_val_batches:
         value: 0
+      log_every_n_steps:
+        value: 50
+      val_check_interval:
+        value: 0.5
+      
   
   wandb_params:
     parameters:
@@ -78,4 +100,19 @@ parameters:
         value: "D:/LaureaMagistrale/MedicalZooPytorch/results/logs"
       manual_seed:
         value: 42
+      ckpt_name:
+        value: "UNet3D"
+      model_name:
+        value: "UNet3D"
+  
+  training_params:
+    parameters:
+      debug:
+        value: True
+      resume_train:
+        value: False
+      ckpt_path:
+        value: null
+      n_models_to_save:
+        value: 10
 

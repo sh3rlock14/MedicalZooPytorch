@@ -1,0 +1,107 @@
+Starting a run with:
+{'data_params': {'augmentation': False,
+                 'classes': 4,
+                 'data_path': 'D:/LaureaMagistrale/Tesi Magistrale/MICCAI '
+                              'Data/',
+                 'dataset': 'brats2018',
+                 'load': False,
+                 'normalization': 'full_volume_mean',
+                 'num_workers': 0,
+                 'split': 0.8,
+                 'threshold': 1e-11,
+                 'train_batch_size': 4,
+                 'vol_crop_dim': [64, 64, 64],
+                 'vol_train_samples': 32,
+                 'vol_val_samples': 4},
+ 'exp_params': {'alpha': 0.99,
+                'inChannels': 4,
+                'inModalities': 4,
+                'lr': 2.1911023394170015e-05,
+                'momentum': 0.7274425387180107,
+                'num_iters': 100,
+                'weight_decay': 0.02447166543063988},
+ 'model_params': {'base_n_filter': 8, 'in_channels': 4, 'n_classes': 4},
+ 'sweep_params': {'ntrials': 1,
+                  'project': 'MICCAI 2018 Medical Image Segmentation'},
+ 'trainer_params': {'accelerator': 'gpu',
+                    'devices': 1,
+                    'limit_val_batches': 0,
+                    'log_every_n_steps': 50,
+                    'max_steps': 100,
+                    'max_time': '00:00:10:00',
+                    'num_sanity_val_steps': 0,
+                    'val_check_interval': 0.5},
+ 'training_params': {'ckpt_path': None,
+                     'debug': True,
+                     'n_models_to_save': 10,
+                     'resume_train': False},
+ 'wandb_params': {'ckpt_name': 'UNet3D',
+                  'manual_seed': 42,
+                  'model_name': 'UNet3D',
+                  'save_dir': 'D:/LaureaMagistrale/MedicalZooPytorch/results/logs'}}
+Mode: train Subvolume samples to generate:  32  Volumes:  195
+Mode: val Subvolume samples to generate:  4  Volumes:  90
+D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\loggers\wandb.py:352: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Backend QtAgg is interactive backend. Turning interactive mode on.
+So far so good!
+====== Starting Training UNet3D from scratch ======
+Mode: train Subvolume samples to generate:  32  Volumes:  195
+Mode: val Subvolume samples to generate:  4  Volumes:  90
+
+Sanity Checking:   0%|                                                                                                       | 0/1 [00:00<?, ?it/s]
+D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\trainer\connectors\data_connector.py:236: PossibleUserWarning: The dataloader, val_dataloader 0, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 8 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+
+Sanity Checking DataLoader 0:   0%|                                                                                          | 0/1 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "c:\Users\User\.vscode\extensions\ms-python.python-2022.18.0\pythonFiles\lib\python\debugpy\_vendored\pydevd\pydevd.py", line 3433, in <module>
+    main()
+  File "c:\Users\User\.vscode\extensions\ms-python.python-2022.18.0\pythonFiles\lib\python\debugpy\_vendored\pydevd\pydevd.py", line 3426, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "c:\Users\User\.vscode\extensions\ms-python.python-2022.18.0\pythonFiles\lib\python\debugpy\_vendored\pydevd\pydevd.py", line 2502, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+  File "c:\Users\User\.vscode\extensions\ms-python.python-2022.18.0\pythonFiles\lib\python\debugpy\_vendored\pydevd\pydevd.py", line 2509, in _exec
+    globals = pydevd_runpy.run_path(file, globals, '__main__')
+  File "c:\Users\User\.vscode\extensions\ms-python.python-2022.18.0\pythonFiles\lib\python\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "c:\Users\User\.vscode\extensions\ms-python.python-2022.18.0\pythonFiles\lib\python\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "c:\Users\User\.vscode\extensions\ms-python.python-2022.18.0\pythonFiles\lib\python\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "plTrainBrats18.py", line 131, in <module>
+    main()
+  File "plTrainBrats18.py", line 120, in main
+    trainer.fit(
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 696, in fit
+    self._call_and_handle_interrupt(
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 650, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 735, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 1166, in _run
+    results = self._run_stage()
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 1252, in _run_stage
+    return self._run_train()
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 1274, in _run_train
+    self._run_sanity_check()
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 1343, in _run_sanity_check
+    val_loop.run()
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\loops\loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\loops\dataloader\evaluation_loop.py", line 155, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\loops\loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\loops\epoch\evaluation_epoch_loop.py", line 143, in advance
+    output = self._evaluation_step(**kwargs)
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\loops\epoch\evaluation_epoch_loop.py", line 240, in _evaluation_step
+    output = self.trainer._call_strategy_hook(hook_name, *kwargs.values())
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 1704, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\pytorch_lightning\strategies\strategy.py", line 370, in validation_step
+    return self.model.validation_step(*args, **kwargs)
+  File "D:\LaureaMagistrale\MedicalZooPytorch\experimentpl.py", line 56, in validation_step
+    input_tensor, target = prepare_input(batch, self.params)
+  File "D:\LaureaMagistrale\MedicalZooPytorch\lib\utils\general.py", line 89, in prepare_input
+    return input_tensor, target
+UnboundLocalError: local variable 'input_tensor' referenced before assignment

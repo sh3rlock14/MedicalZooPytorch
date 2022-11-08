@@ -1,0 +1,87 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.21
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.12
+    start_time: 1667574077
+    t:
+      1:
+      - 1
+      - 9
+      - 41
+      - 55
+      4: 3.8.12
+      5: 0.12.21
+      8:
+      - 3
+      - 5
+data_params:
+  desc: null
+  value:
+    augmentation: false
+    classes: 4
+    data_path: D:/LaureaMagistrale/Tesi Magistrale/MICCAI Data/
+    dataset: brats2018
+    load: false
+    normalization: full_volume_mean
+    num_workers: 0
+    split: 0.8
+    threshold: 1.0e-11
+    train_batch_size: 4
+    vol_crop_dim:
+    - 64
+    - 64
+    - 64
+    vol_train_samples: 32
+    vol_val_samples: 4
+exp_params:
+  desc: null
+  value:
+    alpha: 0.99
+    inChannels: 4
+    inModalities: 4
+    lr: 0.004563673059774961
+    momentum: 0.7957797507771134
+    num_iters: 100
+    weight_decay: 0.01175110608347381
+model_params:
+  desc: null
+  value:
+    base_n_filter: 8
+    in_channels: 4
+    n_classes: 4
+sweep_params:
+  desc: null
+  value:
+    ntrials: 1
+    project: MICCAI 2018 Medical Image Segmentation
+trainer_params:
+  desc: null
+  value:
+    accelerator: gpu
+    devices: 1
+    limit_val_batches: 0
+    log_every_n_steps: 50
+    max_steps: 100
+    max_time: 00:00:10:00
+    num_sanity_val_steps: 0
+    val_check_interval: 0.5
+training_params:
+  desc: null
+  value:
+    ckpt_path: null
+    debug: true
+    n_models_to_save: 10
+    resume_train: true
+wandb_params:
+  desc: null
+  value:
+    ckpt_name: UNet3D
+    manual_seed: 42
+    model_name: UNet3D
+    save_dir: D:/LaureaMagistrale/MedicalZooPytorch/results/logs

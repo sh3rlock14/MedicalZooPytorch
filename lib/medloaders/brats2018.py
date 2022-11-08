@@ -178,8 +178,8 @@ class MICCAIBraTS2018(Dataset):
             [img_t1, img_t1ce, img_t2, img_flair], img_seg = self.transform([img_t1, img_t1ce, img_t2, img_flair],
                                                                             img_seg)
 
-            return torch.FloatTensor(img_t1.copy()).unsqueeze(0), torch.FloatTensor(img_t1ce.copy()).unsqueeze(
-                0), torch.FloatTensor(img_t2.copy()).unsqueeze(0), torch.FloatTensor(img_flair.copy()).unsqueeze(
-                0), torch.FloatTensor(img_seg.copy())
+        return torch.FloatTensor(img_t1.copy()).unsqueeze(0), torch.FloatTensor(img_t1ce.copy()).unsqueeze(
+            0), torch.FloatTensor(img_t2.copy()).unsqueeze(0), torch.FloatTensor(img_flair.copy()).unsqueeze(
+            0), torch.FloatTensor(img_seg.copy())
 
-        return img_t1, img_t1ce, img_t2, img_flair, img_seg
+        #return img_t1, img_t1ce, img_t2, img_flair, img_seg

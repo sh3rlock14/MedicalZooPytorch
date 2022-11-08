@@ -1,0 +1,46 @@
+wandb_version: 1
+
+data_params:
+  value:
+    augmentation: false
+    classes: 4
+    data_path: D:/LaureaMagistrale/Tesi Magistrale/MICCAI Data/
+    dataset: brats2018
+    load: false
+    normalization: full_volume_mean
+    num_workers: 0
+    split: 0.8
+    threshold: 1.0e-11
+    train_batch_size: 4
+    vol_crop_dim:
+    - 64
+    - 64
+    - 64
+    vol_train_samples: 32
+    vol_val_samples: 4
+exp_params:
+  value:
+    inChannels: 4
+    inModalities: 4
+    lr: 6.433291495524194e-05
+model_params:
+  value:
+    base_n_filter: 8
+    in_channels: 4
+    n_classes: 4
+sweep_params:
+  value:
+    ntrials: 1
+    project: MICCAI 2018 Medical Image Segmentation
+trainer_params:
+  value:
+    accelerator: gpu
+    devices: 1
+    limit_val_batches: 0
+    max_steps: 100
+    max_time: 00:00:10:00
+    num_sanity_val_steps: 0
+wandb_params:
+  value:
+    manual_seed: 42
+    save_dir: D:/LaureaMagistrale/MedicalZooPytorch/results/logs

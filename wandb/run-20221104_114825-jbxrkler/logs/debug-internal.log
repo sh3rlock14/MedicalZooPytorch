@@ -1,0 +1,194 @@
+2022-11-04 11:48:30,157 INFO    MainThread:23116 [internal.py:wandb_internal():90] W&B internal server running at pid: 23116, started at: 2022-11-04 11:48:30.153878
+2022-11-04 11:48:30,177 INFO    WriterThread:23116 [datastore.py:open_for_write():75] open: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\run-jbxrkler.wandb
+2022-11-04 11:48:30,273 DEBUG   SenderThread:23116 [sender.py:send():236] send: header
+2022-11-04 11:48:30,277 DEBUG   SenderThread:23116 [sender.py:send():236] send: run
+2022-11-04 11:48:30,889 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: check_version
+2022-11-04 11:48:30,901 INFO    SenderThread:23116 [dir_watcher.py:__init__():216] watching files in: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files
+2022-11-04 11:48:30,918 INFO    SenderThread:23116 [sender.py:_start_run_threads():815] run started: jbxrkler with start time 1667558907
+2022-11-04 11:48:30,918 DEBUG   SenderThread:23116 [sender.py:send():236] send: summary
+2022-11-04 11:48:30,918 INFO    SenderThread:23116 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-11-04 11:48:30,922 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: check_version
+2022-11-04 11:48:31,678 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: run_start
+2022-11-04 11:48:31,930 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_created():269] file/dir created: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\wandb-summary.json
+2022-11-04 11:48:32,574 DEBUG   HandlerThread:23116 [meta.py:__init__():35] meta init
+2022-11-04 11:48:32,574 DEBUG   HandlerThread:23116 [meta.py:__init__():49] meta init done
+2022-11-04 11:48:32,574 DEBUG   HandlerThread:23116 [meta.py:probe():209] probe
+2022-11-04 11:48:32,638 DEBUG   HandlerThread:23116 [meta.py:_setup_git():199] setup git
+2022-11-04 11:48:32,758 DEBUG   HandlerThread:23116 [meta.py:_setup_git():206] setup git done
+2022-11-04 11:48:32,758 DEBUG   HandlerThread:23116 [meta.py:_save_pip():53] save pip
+2022-11-04 11:48:32,766 DEBUG   HandlerThread:23116 [meta.py:_save_pip():67] save pip done
+2022-11-04 11:48:32,766 DEBUG   HandlerThread:23116 [meta.py:_save_conda():74] save conda
+2022-11-04 11:48:32,774 ERROR   HandlerThread:23116 [meta.py:_save_conda():83] Error saving conda packages
+Traceback (most recent call last):
+  File "D:\IDEs\anaconda3\envs\AML\lib\site-packages\wandb\sdk\internal\meta.py", line 79, in _save_conda
+    subprocess.call(
+  File "D:\IDEs\anaconda3\envs\AML\lib\subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "D:\IDEs\anaconda3\envs\AML\lib\subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "D:\IDEs\anaconda3\envs\AML\lib\subprocess.py", line 1311, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+  File "c:\Users\User\.vscode\extensions\ms-python.python-2022.18.0\pythonFiles\lib\python\debugpy\_vendored\pydevd\_pydev_bundle\pydev_monkey.py", line 853, in new_CreateProcess
+    return getattr(_subprocess, original_name)(app_name, cmd_line, *args)
+FileNotFoundError: [WinError 2] Impossibile trovare il file specificato
+2022-11-04 11:48:32,838 DEBUG   HandlerThread:23116 [meta.py:_save_conda():84] save conda done
+2022-11-04 11:48:32,838 DEBUG   HandlerThread:23116 [meta.py:probe():247] probe done
+2022-11-04 11:48:32,942 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_created():269] file/dir created: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\wandb-metadata.json
+2022-11-04 11:48:32,942 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_created():269] file/dir created: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\requirements.txt
+2022-11-04 11:48:32,942 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_created():269] file/dir created: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\conda-environment.yaml
+2022-11-04 11:48:33,499 DEBUG   SenderThread:23116 [sender.py:send():236] send: files
+2022-11-04 11:48:33,499 INFO    SenderThread:23116 [sender.py:_save_file():952] saving file wandb-metadata.json with policy now
+2022-11-04 11:48:33,503 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: stop_status
+2022-11-04 11:48:33,507 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: stop_status
+2022-11-04 11:48:33,931 DEBUG   SenderThread:23116 [sender.py:send():236] send: telemetry
+2022-11-04 11:48:33,947 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_created():269] file/dir created: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\output.log
+2022-11-04 11:48:34,849 INFO    Thread-23 :23116 [upload_job.py:push():138] Uploaded file C:\Users\User\AppData\Local\Temp\tmpivlox_5awandb\cd6vvm53-wandb-metadata.json
+2022-11-04 11:48:35,963 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\output.log
+2022-11-04 11:48:39,999 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\output.log
+2022-11-04 11:48:48,943 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: stop_status
+2022-11-04 11:48:48,945 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: stop_status
+2022-11-04 11:49:01,169 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\config.yaml
+2022-11-04 11:49:04,328 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: stop_status
+2022-11-04 11:49:04,328 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: stop_status
+2022-11-04 11:49:04,798 DEBUG   SenderThread:23116 [sender.py:send():236] send: stats
+2022-11-04 11:49:19,736 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: stop_status
+2022-11-04 11:49:19,736 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: stop_status
+2022-11-04 11:49:35,120 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: stop_status
+2022-11-04 11:49:35,120 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: stop_status
+2022-11-04 11:49:39,398 DEBUG   SenderThread:23116 [sender.py:send():236] send: stats
+2022-11-04 11:49:50,669 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: stop_status
+2022-11-04 11:49:50,669 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: stop_status
+2022-11-04 11:49:54,607 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\output.log
+2022-11-04 11:50:14,094 DEBUG   SenderThread:23116 [sender.py:send():236] send: stats
+2022-11-04 11:50:51,814 DEBUG   SenderThread:23116 [sender.py:send():236] send: stats
+2022-11-04 11:50:53,573 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: stop_status
+2022-11-04 11:50:53,581 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: stop_status
+2022-11-04 11:50:54,057 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\output.log
+2022-11-04 11:50:59,080 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\output.log
+2022-11-04 11:51:03,714 DEBUG   SenderThread:23116 [sender.py:send():236] send: telemetry
+2022-11-04 11:51:04,545 DEBUG   SenderThread:23116 [sender.py:send():236] send: exit
+2022-11-04 11:51:04,549 INFO    SenderThread:23116 [sender.py:send_exit():372] handling exit code: 0
+2022-11-04 11:51:04,549 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:04,553 INFO    SenderThread:23116 [sender.py:send_exit():374] handling runtime: 152
+2022-11-04 11:51:04,605 INFO    SenderThread:23116 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-11-04 11:51:04,621 INFO    SenderThread:23116 [sender.py:send_exit():380] send defer
+2022-11-04 11:51:04,625 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:04,633 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: defer
+2022-11-04 11:51:04,637 INFO    HandlerThread:23116 [handler.py:handle_request_defer():163] handle defer: 0
+2022-11-04 11:51:04,641 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: defer
+2022-11-04 11:51:04,641 INFO    SenderThread:23116 [sender.py:send_request_defer():389] handle sender defer: 0
+2022-11-04 11:51:04,641 INFO    SenderThread:23116 [sender.py:transition_state():393] send defer: 1
+2022-11-04 11:51:04,645 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: defer
+2022-11-04 11:51:04,649 INFO    HandlerThread:23116 [handler.py:handle_request_defer():163] handle defer: 1
+2022-11-04 11:51:04,991 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:04,991 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: defer
+2022-11-04 11:51:04,991 INFO    SenderThread:23116 [sender.py:send_request_defer():389] handle sender defer: 1
+2022-11-04 11:51:04,991 INFO    SenderThread:23116 [sender.py:transition_state():393] send defer: 2
+2022-11-04 11:51:04,991 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:04,991 DEBUG   SenderThread:23116 [sender.py:send():236] send: stats
+2022-11-04 11:51:04,995 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: defer
+2022-11-04 11:51:04,995 INFO    HandlerThread:23116 [handler.py:handle_request_defer():163] handle defer: 2
+2022-11-04 11:51:04,995 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: defer
+2022-11-04 11:51:04,995 INFO    SenderThread:23116 [sender.py:send_request_defer():389] handle sender defer: 2
+2022-11-04 11:51:04,999 INFO    SenderThread:23116 [sender.py:transition_state():393] send defer: 3
+2022-11-04 11:51:04,999 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: defer
+2022-11-04 11:51:04,999 INFO    HandlerThread:23116 [handler.py:handle_request_defer():163] handle defer: 3
+2022-11-04 11:51:04,999 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: defer
+2022-11-04 11:51:04,999 INFO    SenderThread:23116 [sender.py:send_request_defer():389] handle sender defer: 3
+2022-11-04 11:51:04,999 INFO    SenderThread:23116 [sender.py:transition_state():393] send defer: 4
+2022-11-04 11:51:04,999 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: defer
+2022-11-04 11:51:04,999 INFO    HandlerThread:23116 [handler.py:handle_request_defer():163] handle defer: 4
+2022-11-04 11:51:04,999 DEBUG   SenderThread:23116 [sender.py:send():236] send: summary
+2022-11-04 11:51:05,003 INFO    SenderThread:23116 [sender.py:_save_file():952] saving file wandb-summary.json with policy end
+2022-11-04 11:51:05,003 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: defer
+2022-11-04 11:51:05,003 INFO    SenderThread:23116 [sender.py:send_request_defer():389] handle sender defer: 4
+2022-11-04 11:51:05,003 INFO    SenderThread:23116 [sender.py:transition_state():393] send defer: 5
+2022-11-04 11:51:05,003 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: defer
+2022-11-04 11:51:05,003 INFO    HandlerThread:23116 [handler.py:handle_request_defer():163] handle defer: 5
+2022-11-04 11:51:05,003 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: defer
+2022-11-04 11:51:05,003 INFO    SenderThread:23116 [sender.py:send_request_defer():389] handle sender defer: 5
+2022-11-04 11:51:05,103 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:05,123 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\wandb-summary.json
+2022-11-04 11:51:05,123 INFO    Thread-17 :23116 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\output.log
+2022-11-04 11:51:05,562 INFO    SenderThread:23116 [sender.py:transition_state():393] send defer: 6
+2022-11-04 11:51:05,562 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:05,566 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: defer
+2022-11-04 11:51:05,566 INFO    HandlerThread:23116 [handler.py:handle_request_defer():163] handle defer: 6
+2022-11-04 11:51:05,566 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: defer
+2022-11-04 11:51:05,566 INFO    SenderThread:23116 [sender.py:send_request_defer():389] handle sender defer: 6
+2022-11-04 11:51:05,570 INFO    SenderThread:23116 [dir_watcher.py:finish():353] shutting down directory watcher
+2022-11-04 11:51:05,682 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:06,136 INFO    SenderThread:23116 [dir_watcher.py:_on_file_modified():286] file/dir modified: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\config.yaml
+2022-11-04 11:51:06,136 INFO    SenderThread:23116 [dir_watcher.py:finish():383] scan: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files
+2022-11-04 11:51:06,140 INFO    SenderThread:23116 [dir_watcher.py:finish():397] scan save: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\conda-environment.yaml conda-environment.yaml
+2022-11-04 11:51:06,140 INFO    SenderThread:23116 [dir_watcher.py:finish():397] scan save: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\config.yaml config.yaml
+2022-11-04 11:51:06,144 INFO    SenderThread:23116 [dir_watcher.py:finish():397] scan save: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\output.log output.log
+2022-11-04 11:51:06,148 INFO    SenderThread:23116 [dir_watcher.py:finish():397] scan save: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\requirements.txt requirements.txt
+2022-11-04 11:51:06,176 INFO    SenderThread:23116 [dir_watcher.py:finish():397] scan save: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\wandb-metadata.json wandb-metadata.json
+2022-11-04 11:51:06,192 INFO    SenderThread:23116 [dir_watcher.py:finish():397] scan save: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\wandb-summary.json wandb-summary.json
+2022-11-04 11:51:06,288 INFO    SenderThread:23116 [sender.py:transition_state():393] send defer: 7
+2022-11-04 11:51:06,288 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:06,360 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: defer
+2022-11-04 11:51:06,364 INFO    HandlerThread:23116 [handler.py:handle_request_defer():163] handle defer: 7
+2022-11-04 11:51:06,364 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: defer
+2022-11-04 11:51:06,380 INFO    SenderThread:23116 [sender.py:send_request_defer():389] handle sender defer: 7
+2022-11-04 11:51:06,396 INFO    SenderThread:23116 [file_pusher.py:finish():171] shutting down file pusher
+2022-11-04 11:51:06,452 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:06,476 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:06,592 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:06,592 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:06,704 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:06,704 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:06,832 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:06,832 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:06,948 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:06,952 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:07,116 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:07,124 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:07,240 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:07,244 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:07,364 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:07,368 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:07,444 INFO    Thread-24 :23116 [upload_job.py:push():138] Uploaded file D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\config.yaml
+2022-11-04 11:51:07,476 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:07,480 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:07,512 INFO    Thread-25 :23116 [upload_job.py:push():138] Uploaded file D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\output.log
+2022-11-04 11:51:07,600 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:07,600 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:07,680 INFO    Thread-27 :23116 [upload_job.py:push():138] Uploaded file D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\wandb-summary.json
+2022-11-04 11:51:07,688 INFO    Thread-26 :23116 [upload_job.py:push():138] Uploaded file D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\files\requirements.txt
+2022-11-04 11:51:07,720 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:07,724 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:07,836 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:07,836 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:07,896 INFO    Thread-16 :23116 [sender.py:transition_state():393] send defer: 8
+2022-11-04 11:51:07,900 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: defer
+2022-11-04 11:51:07,900 INFO    HandlerThread:23116 [handler.py:handle_request_defer():163] handle defer: 8
+2022-11-04 11:51:07,904 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: defer
+2022-11-04 11:51:07,904 INFO    SenderThread:23116 [sender.py:send_request_defer():389] handle sender defer: 8
+2022-11-04 11:51:07,960 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:08,763 INFO    SenderThread:23116 [sender.py:transition_state():393] send defer: 9
+2022-11-04 11:51:08,763 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:08,771 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: defer
+2022-11-04 11:51:08,771 INFO    HandlerThread:23116 [handler.py:handle_request_defer():163] handle defer: 9
+2022-11-04 11:51:08,775 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: defer
+2022-11-04 11:51:08,775 INFO    SenderThread:23116 [sender.py:send_request_defer():389] handle sender defer: 9
+2022-11-04 11:51:08,775 INFO    SenderThread:23116 [sender.py:transition_state():393] send defer: 10
+2022-11-04 11:51:08,779 DEBUG   SenderThread:23116 [sender.py:send():236] send: final
+2022-11-04 11:51:08,783 DEBUG   SenderThread:23116 [sender.py:send():236] send: footer
+2022-11-04 11:51:08,787 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: defer
+2022-11-04 11:51:08,787 INFO    HandlerThread:23116 [handler.py:handle_request_defer():163] handle defer: 10
+2022-11-04 11:51:08,787 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: defer
+2022-11-04 11:51:08,791 INFO    SenderThread:23116 [sender.py:send_request_defer():389] handle sender defer: 10
+2022-11-04 11:51:08,887 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: poll_exit
+2022-11-04 11:51:08,887 DEBUG   SenderThread:23116 [sender.py:send_request():250] send_request: poll_exit
+2022-11-04 11:51:08,887 INFO    SenderThread:23116 [file_pusher.py:join():176] waiting for file pusher
+2022-11-04 11:51:10,271 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: sampled_history
+2022-11-04 11:51:10,279 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: get_summary
+2022-11-04 11:51:10,283 DEBUG   HandlerThread:23116 [handler.py:handle_request():140] handle_request: shutdown
+2022-11-04 11:51:10,287 INFO    HandlerThread:23116 [handler.py:finish():806] shutting down handler
+2022-11-04 11:51:10,802 INFO    WriterThread:23116 [datastore.py:close():279] close: D:\LaureaMagistrale\MedicalZooPytorch\wandb\run-20221104_114825-jbxrkler\run-jbxrkler.wandb
+2022-11-04 11:51:11,167 INFO    SenderThread:23116 [sender.py:finish():1114] shutting down sender
+2022-11-04 11:51:11,167 INFO    SenderThread:23116 [file_pusher.py:finish():171] shutting down file pusher
+2022-11-04 11:51:11,167 INFO    SenderThread:23116 [file_pusher.py:join():176] waiting for file pusher
+2022-11-04 11:51:11,733 INFO    MainThread:23116 [internal.py:handle_exit():80] Internal process exited
